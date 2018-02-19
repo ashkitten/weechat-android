@@ -4,19 +4,6 @@ import org.aspectj.tools.ajc.Main
 
 apply plugin: 'com.android.library'
 
-buildscript {
-    repositories {
-        mavenCentral()
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath 'org.aspectj:aspectjtools:1.8.6'
-    }
-}
-
-
 repositories {
     mavenCentral()
     google()

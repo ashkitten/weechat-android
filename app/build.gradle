@@ -2,16 +2,6 @@ import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
 import org.aspectj.tools.ajc.Main
 
-buildscript {
-    repositories {
-        jcenter()
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath 'org.aspectj:aspectjtools:1.8.6'
-    }
-}
 apply plugin: 'com.android.application'
 
 dependencies {
