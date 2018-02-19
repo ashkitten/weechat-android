@@ -19,8 +19,6 @@ if [ -z "$DEVKEYPASSWORD" ]; then
     DEVRELEASE="0"
 fi
 
-sed -i  "s/org.gradle.daemon=false/org.gradle.daemon=true/g" ~/.gradle/gradle.properties
-
 if [ "$DEVRELEASE" == "1" ]; then
     ./gradlew clean assembleDevRelease \
         -PdevStorefile="$DEVSTOREFILE" \
